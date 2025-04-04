@@ -1,0 +1,87 @@
+ const productArray = [
+  {
+    id: '01',
+    name: 'Áo bomber MLB 2 lớp thu đông',
+    price: '319,999đ',
+    imgLink: '/fashion_store/img/ao_bomber_mlb_ny/ao_bomber_mlb_grey.png',
+  },
+  {
+    id: '02',
+    name: 'Áo Cardigan len nỉ form rộng 2 túi',
+    price: '249,999đ',
+    imgLink: '/fashion_store/img/ao_cardigan_len.png',
+  },
+  {
+    id: '03',
+    name: 'Áo hoodie Angelic Society đen phong cách',
+    price: '459,999đ',
+    imgLink: '/fashion_store/img/ao_hoodie_angelic.png',
+  },
+  {
+    id: '04',
+    name: 'Áo đá bóng của CLB Manchester United mùa 2006 - 2007',
+    price: '229,999đ',
+    imgLink: '/fashion_store/img/ao_mu_2006-07.png',
+  },
+  {
+    id: '05',
+    name: 'Áo phao gi-le basic phối đồ cực dễ',
+    price: '430,000đ',
+    imgLink: '/fashion_store/img/ao_phao_gile.png',
+  },
+  {
+    id: '06',
+    name: 'Áo sơ mi kẻ sọc form rộng',
+    price: '179,000đ',
+    imgLink: '/fashion_store/img/ao_so_mi_ke_soc.png',
+  },
+  {
+    id: '07',
+    name: 'Áo sweater nỉ vải trơn đỉnh nóc kịch trần',
+    price: '419,999đ',
+    imgLink: '/fashion_store/img/ao_sweater_ni.png',
+  },
+  {
+    id: '08',
+    name: 'Áo thun form rộng Rockets cực hot trend',
+    price: '210,000đ',
+    imgLink: '/fashion_store/img/ao_thun_coc_tay_7G.png',
+  },
+];
+
+// arrange
+// const arrangeProducts = document.getElementById('arrange');
+// arrangeProducts.addEventListener('change', () => {
+//   if (arrangeProducts.value == 'ascending') {
+//     const products = document.querySelector('.main__productsList-item');
+//   }
+//   if (arrangeProducts.value == 'decreasing') {
+//     const products = document.querySelectorAll('.main__productsList-item');
+//     products.forEach((item) => {});
+//   }
+// });
+
+const aProduct = `
+<div class="main__productsList-item" id="${item.id}">
+  <a href="/fashion_store/html/ao_bomber_mlb_ny.html" class="product__img">
+    <img
+      src= "${item.imgLink}"
+      alt="${item.name}"
+    />
+  </a>
+  <div class="product__info">
+    <div class="product__info-top">
+      <h5>4Bros</h5>
+      <div class="product__info-loveIcon">
+        <i class="loveIcon__icon fa-regular fa-heart"></i>
+        <span class="loveIcon__text">Yêu thích</span>
+      </div>
+    </div>
+    <a href="/fashion_store/html/ao_bomber_mlb_ny.html">
+      "${item.name}"
+    </a>
+    <p>"${item.price}"</p>
+  </div>
+  <button class="product__btnAdd">Thêm vào giỏ hàng</button>
+</div>;
+`;

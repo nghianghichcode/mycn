@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4 Anh Em</title>
+    <link rel="stylesheet" href="/fashion_store/css/basic.css" />
+    <link rel="stylesheet" href="/fashion_store/css/trangchu.css" />
+    <link rel="stylesheet" href="/fashion_store/css/header.css" />
+    <link rel="stylesheet" href="/fashion_store/css/footer.css" />
+    <!-- reset css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <!-- get icon with cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <!-- menu khi màn hình thu nhỏ tới 1 mức nhất định có @media ở dưới cùng  -->
+      <ul class="header__menuMobile" id="header__menuMobile">
+        <div class="header__menuMobile-title">
+          <p>🛒 Menu</p>
+          <i id="exitMenu" class="fa-solid fa-xmark"></i>
+        </div>
+        <li><a href="/fashion_store/html/trangchu.html">Home</a></li>
+        <li class="header__menu-dropdown">
+          <a href="/fashion_store/html/sanpham.html">Sản Phẩm</a>
+          <div class="dropdown-list">
+            <a href="/fashion_store/html/ao.html">Áo</a>
+            <a href="/fashion_store/html/quan.html">Quần</a>
+            <a href="/fashion_store/html/giay.html">Giày</a>
+          </div>
+        </li>
+        <li><a href="/fashion_store/html/gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="/fashion_store/html/lienhe.html">Liên Hệ</a></li>
+      </ul>
+      <nav>
+        <div class="header__bar">
+          <i id="barIcon" class="fa-solid fa-bars"></i>
+        </div>
+        <!-- logo -->
+        <a href="/fashion_store/html/trangchu.html" class="header__logo">
+          <img src="/fashion_store/img/logo_shop.png" alt="Logo" />
+        </a>
+        <!-- Menu -->
+        <ul class="header__menu">
+          <li><a href="/fashion_store/html/trangchu.html">Home</a></li>
+          <li class="header__menu-dropdown">
+            <a href="/fashion_store/html/sanpham.html">Sản Phẩm</a>
+            <div class="dropdown-list">
+              <a href="/fashion_store/html/ao.html">Áo</a>
+              <a href="/fashion_store/html/quan.html">Quần</a>
+              <a href="/fashion_store/html/giay.html">Giày</a>
+            </div>
+          </li>
+          <li><a href="/fashion_store/html/gioithieu.html">Giới Thiệu</a></li>
+          <li><a href="/fashion_store/html/lienhe.html">Liên Hệ</a></li>
+        </ul>
+        <div class="header__icon">
+          <!-- Giỏ hàng -->
+          <div class="header__icon--cart">
+            <a href="/fashion_store/html/giohang.html">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+            <span id="cart-badge" class="cart-badge">0</span>
+          </div>
+          <!-- sản phẩm đã thích -->
+          <div class="header__icon--heart">
+            <a href="/fashion_store/html/sanpham_yeuthich.html"
+              ><i class="fa-solid fa-heart"></i
+            ></a>
+            <span id="heart-badge" class="heart-badge">0</span>
+          </div>
+          <!-- Người dùng -->
+          <div class="header__icon--user">
+            <i class="fas fa-user"></i>
+            <div class="user-dropdown">
+              <a href="/fashion_store/html/dangnhap_dangky.html?type=login"
+                >Đăng nhập</a
+              >
+              <a href="/fashion_store/html/dangnhap_dangky.html?type=register"
+                >Đăng ký</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="header__under">Trang chủ</div>
+    </header>
+    <div class="main">
+      <h2>Sản Phẩm Nổi Bật</h2>
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="../ảnh trang chủ/26.jpg" alt="Áo Thời Trang" />
+          <h3>Áo Sweeter Polo</h3>
+          <p>NOCTURNAL ® Polo Sweater</p>
+          <a href="/áo/ao.html" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-item">
+          <img
+            src="../ảnh trang chủ/giày sneakers.webp"
+            alt="Giày Thời Trang"
+          />
+          <h3>Giày Sneakes unisex cổ thấp</h3>
+          <p>Thiết kế trẻ trung, năng động.</p>
+          <a href="/giày/giay.html" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-item">
+          <img src="../ảnh trang chủ/quần.jpg" alt="Quần Jean Nam" />
+          <h3>Quần Jean Nam Lyocell Tencel</h3>
+          <p>Sự lựa chọn hoàn hảo cho phong cách.</p>
+          <a href="/quần/quan.html" class="buy-btn">Mua ngay</a>
+        </div>
+        <div class="product-item">
+          <img src="../img/bo_quan_ao_acmilan2007.png" alt="Áo ACMILAN" />
+          <h3>Bộ Áo Quần Acmilan</h3>
+          <p>Bộ áo quần thể thao</p>
+          <a href="/áo/ao.html" class="buy-btn">Mua ngay</a>
+        </div>
+      </div>
+      <div class="customer-reviews">
+        <h2>Khách Hàng Đánh Giá</h2>
+        <div class="reviews-container">
+          <!-- Đánh giá 1 -->
+          <div class="review-item">
+            <img
+              src="/img/anh a.jpg"
+              alt="Ảnh khách hàng"
+              class="review-avatar"
+            />
+            <div class="review-content">
+              <h3>Nguyễn An</h3>
+              <p>
+                "Sản phẩm rất chất lượng, giao hàng nhanh chóng. Mình rất hài
+                lòng!"
+              </p>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <img
+                src="/img/ao_bomber_mlb.png"
+                alt="Ảnh sản phẩm"
+                class="review-avatar"
+              />
+              <a href="/fashion_store/html/ao_bomber_mlb_ny.html">
+                <div>
+                  <h3>Áo Bomber MLB New York</h3>
+                </div>
+              </a>
+              <div class="review-date">Đánh giá ngày 12/02/2023</div>
+            </div>
+          </div>
+          <!-- Đánh giá 2 -->
+          <div class="review-item">
+            <img
+              src="/img/anh b.jpg"
+              alt="Ảnh khách hàng"
+              class="review-avatar"
+            />
+            <div class="review-content">
+              <h3>Trần Tuấn</h3>
+              <p>"Quần áo đẹp và đúng với mô tả. Sẽ tiếp tục ủng hộ shop."</p>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <img
+                src="/img/giay_air_jordan_1_Retro_High_OG.png"
+                alt="Ảnh sản phẩm"
+                class="review-avatar"
+              />
+              <a
+                href="/fashion_store/html/giay_nike_air_jordan_1_retro_high_og.html"
+              >
+                <div>
+                  <h3>Giày Nike Air Jordan 1 Retro High OG</h3>
+                </div>
+              </a>
+              <div class="review-date">Đánh giá ngày 12/02/2023</div>
+            </div>
+          </div>
+          <!-- Đánh giá 3 -->
+          <div class="review-item">
+            <img
+              src="/img/anh c.jpg"
+              alt="Ảnh khách hàng"
+              class="review-avatar"
+            />
+            <div class="review-content">
+              <h3>Trần Linh</h3>
+              <p>"Giao hàng đúng hẹn, nhân viên hỗ trợ rất nhiệt tình."</p>
+              <div class="review-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <img
+                src="/img/quan_au_nam_ong_suong_Anyoung.png"
+                alt="Ảnh sản phẩm"
+                class="review-avatar"
+              />
+              <a href="/fashion_store/html/quan_au_nam_ong_suong.html">
+                <div>
+                  <h3>Quần Âu Nam Ong Sương</h3>
+                </div>
+              </a>
+              <div class="review-date">Đánh giá ngày 12/02/2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer__contact">
+        <div class="footer__contact-item">
+          <div class="footer__contact-address">
+            <i class="bx bx-map"></i>Địa chỉ : Trường Đại học Vinh, Thành phố
+            Vinh, Nghệ An
+          </div>
+          <div class="footer__contact-phone">
+            <i class="bx bx-mobile"></i>Số điện thoại : 0123456789
+          </div>
+          <div class="footer__contact-email">
+            <i class="bx bx-envelope"></i>
+            Email : 4bros@gmail.com
+          </div>
+        </div>
+        <div class="footer__contact-item">
+          <h3>CHÍNH SÁCH</h3>
+          <ul class="footer__contact-policy">
+            <li><a href="page.html">Trang chủ</a></li>
+            <li><a href="#">Sản phẩm</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+            <li><a href="#">Đơn hàng</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact-item">
+          <h3>ĐĂNG KÝ NHẬN TIN</h3>
+          <div class="footer__contact-regis">
+            <input type="text" id="" placeholder="Nhập địa chỉ email" />
+            <button class="footer__contact-regis-btn">Đăng ký</button>
+          </div>
+          <div class="footer__contact-icon">
+            <a href="">
+              <img
+                src="https://theme.hstatic.net/200000881795/1001243022/14/facebook.png?v=152"
+                alt="Facebook"
+            /></a>
+            <a href="">
+              <img
+                src="https://theme.hstatic.net/200000881795/1001243022/14/instagram.png?v=152"
+                alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__PaymentMethod">
+        <a href="#">
+          <img
+            src="https://theme.hstatic.net/200000881795/1001243022/14/footer_trustbadge.png?v=152"
+            alt="Phương thức thanh toán"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="/fashion_store/js/header.js"></script>
+    <script>
+      let currentSlide = 0; // Chỉ số của slide hiện tại
+      const slides = document.querySelectorAll('.slide'); // Lấy tất cả các slide
+      const totalSlides = slides.length; // Tổng số slide
+
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active');
+        });
+        slides[index].classList.add('active'); // Hiển thị slide hiện tại
+      }
+
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides; // Tăng chỉ số slide
+        showSlide(currentSlide); // Hiển thị slide mới
+      }
+
+      // Tự động chuyển slide mỗi 3 giây
+      setInterval(nextSlide, 3000);
+
+      // Hiển thị slide đầu tiên
+      showSlide(currentSlide);
+    </script>
+    <script>
+      const userIcon = document.querySelector('.user-icon-container');
+      const dropdown = document.querySelector('.user-dropdown');
+
+      userIcon.addEventListener('click', () => {
+        dropdown.style.display =
+          dropdown.style.display === 'block' ? 'none' : 'block';
+      });
+
+      // Đóng menu nếu click ra ngoài
+      document.addEventListener('click', (event) => {
+        if (!userIcon.contains(event.target)) {
+          dropdown.style.display = 'none';
+        }
+      });
+      const menuIcon = document.querySelector('.menu-icon');
+      const navbar = document.querySelector('.navbar');
+      menuIcon.addEventListener('click', () => {
+        navbar.classList.toggle('active'); // Thêm/xóa class 'active' để hiển thị menu
+      });
+    </script>
+  </body>
+</html>
